@@ -1,0 +1,835 @@
+{
+  "ownership": {
+    "home": "Headline, one hero sentence, and the six featured projects.",
+    "about": "Longer narrative, education, professional direction, and strengths.",
+    "experience": "Four internship records and their role-specific work.",
+    "skills": "Single skill taxonomy. Python stays one record.",
+    "achievements": "Competitions and open-source recognition only.",
+    "volunteering": "Rotaract role only. Not repeated in the narrative.",
+    "projects": "Featured work plus a short verified archive.",
+    "blog": "No articles are seeded. The blog stays empty until a real piece exists.",
+    "contact": "Phone, email, LinkedIn, portfolio, and GitHub."
+  },
+  "about": {
+    "headline": "Software Engineer & AI Systems Developer",
+    "shortBio": "Software engineer and AI systems developer in Bengaluru, working across applied AI, data, analytics, and automation.",
+    "longBio": "I build software and applied AI that can be tested, with analytics and automation as the adjacent practice.\n\nI study engineering at RV College of Engineering and work as a software engineer and AI systems developer. The through-line is work that can be checked: services, data workflows, and learning systems that are tested, debugged, and revised after the first result.\n\nThe direction is practical systems rather than a single library or a single domain. Analytics stays beside that work — confirm the data, then explain what it actually supports.",
+    "location": "Bengaluru",
+    "email": "priyamm.007.parashar@gmail.com",
+    "phone": "+91-9663811906",
+    "resumeUrl": null,
+    "socialLinks": {
+      "github": "https://github.com/ViivianREINE",
+      "linkedin": "https://www.linkedin.com/in/priyam-parashar-5b0b67273",
+      "instagram": "https://instagram.com/axon_nova.67",
+      "x": "https://x.com/xoxo_preeam",
+      "portfolio": "https://portfolio-priyam-ten.vercel.app/"
+    },
+    "profileData": {
+      "education": [
+        {
+          "institution": "RV College of Engineering",
+          "credential": "B.E.",
+          "start": "Oct 2023",
+          "end": "Jun 2027",
+          "detail": null,
+          "location": "Bengaluru"
+        }
+      ],
+      "achievements": [
+        {
+          "title": "GSSoC'26 Open Source Contributor & Project Contributor",
+          "detail": "Selected contributor for GirlScript Summer of Code 2026, working on open-source software.",
+          "project": null
+        },
+        {
+          "title": "Meta Hackathon — Grand Finale Finalist",
+          "detail": "Reached the Grand Finale with a team selected from the earlier rounds.",
+          "project": null
+        },
+        {
+          "title": "IdeaTattva Ideathon — 1st in Pitching",
+          "detail": "NIKSHATRA, BIT Bangalore. Ranked 1st in the pitching round and finished in the top 10 of 118 teams.",
+          "project": "DORCS — Distributed Offline Rescue Communication System"
+        },
+        {
+          "title": "Xcelerate Hackathon — Top 20",
+          "detail": "BIT Bangalore. Finished among the top 20 teams and qualified for Round 2.",
+          "project": "Rural Healthcare Emergency Guidance App"
+        }
+      ],
+      "strengths": [
+        {
+          "title": "AI Engineering",
+          "detail": "I like models that can be checked — trained, tested, and revised when the first result is wrong."
+        },
+        {
+          "title": "End-to-End Delivery",
+          "detail": "I stay with a system from the first sketch through the service, the tests, and the fix after it breaks."
+        },
+        {
+          "title": "Analytical Thinking",
+          "detail": "I confirm what the data actually supports before I explain it."
+        }
+      ],
+      "volunteering": [
+        {
+          "role": "Joint Director — Literary Services",
+          "organization": "Rotaract Club of RVCE",
+          "start": "July 2025",
+          "end": "June 2026",
+          "detail": "Led teams, coordinated events, and kept operational timelines moving."
+        }
+      ]
+    }
+  },
+  "skills": [
+    {
+      "name": "Python",
+      "category": "Programming",
+      "proficiency": 90,
+      "displayOrder": 1,
+      "active": true
+    },
+    {
+      "name": "LLM Applications",
+      "category": "AI & LLM Engineering",
+      "proficiency": null,
+      "displayOrder": 2,
+      "active": true
+    },
+    {
+      "name": "NLP",
+      "category": "AI & LLM Engineering",
+      "proficiency": null,
+      "displayOrder": 3,
+      "active": true
+    },
+    {
+      "name": "AI Agents",
+      "category": "AI & LLM Engineering",
+      "proficiency": null,
+      "displayOrder": 4,
+      "active": true
+    },
+    {
+      "name": "RAG",
+      "category": "AI & LLM Engineering",
+      "proficiency": null,
+      "displayOrder": 5,
+      "active": true
+    },
+    {
+      "name": "Prompt Engineering",
+      "category": "AI & LLM Engineering",
+      "proficiency": null,
+      "displayOrder": 6,
+      "active": true
+    },
+    {
+      "name": "AI Workflow Automation",
+      "category": "AI & LLM Engineering",
+      "proficiency": null,
+      "displayOrder": 7,
+      "active": true
+    },
+    {
+      "name": "Machine Learning",
+      "category": "AI & LLM Engineering",
+      "proficiency": null,
+      "displayOrder": 8,
+      "active": true
+    },
+    {
+      "name": "Reinforcement Learning",
+      "category": "AI & LLM Engineering",
+      "proficiency": null,
+      "displayOrder": 9,
+      "active": true
+    },
+    {
+      "name": "Java",
+      "category": "Programming & Backend",
+      "proficiency": null,
+      "displayOrder": 10,
+      "active": true
+    },
+    {
+      "name": "C",
+      "category": "Programming & Backend",
+      "proficiency": null,
+      "displayOrder": 11,
+      "active": true
+    },
+    {
+      "name": "C++",
+      "category": "Programming & Backend",
+      "proficiency": null,
+      "displayOrder": 12,
+      "active": true
+    },
+    {
+      "name": "REST APIs",
+      "category": "Programming & Backend",
+      "proficiency": null,
+      "displayOrder": 13,
+      "active": true
+    },
+    {
+      "name": "Backend Development",
+      "category": "Programming & Backend",
+      "proficiency": null,
+      "displayOrder": 14,
+      "active": true
+    },
+    {
+      "name": "API Integration",
+      "category": "Programming & Backend",
+      "proficiency": null,
+      "displayOrder": 15,
+      "active": true
+    },
+    {
+      "name": "Data Processing",
+      "category": "Programming & Backend",
+      "proficiency": null,
+      "displayOrder": 16,
+      "active": true
+    },
+    {
+      "name": "Scripting",
+      "category": "Programming & Backend",
+      "proficiency": null,
+      "displayOrder": 17,
+      "active": true
+    },
+    {
+      "name": "API Testing",
+      "category": "Programming & Backend",
+      "proficiency": null,
+      "displayOrder": 18,
+      "active": true
+    },
+    {
+      "name": "HTML",
+      "category": "Web & Full Stack",
+      "proficiency": null,
+      "displayOrder": 19,
+      "active": true
+    },
+    {
+      "name": "CSS",
+      "category": "Web & Full Stack",
+      "proficiency": null,
+      "displayOrder": 20,
+      "active": true
+    },
+    {
+      "name": "JavaScript",
+      "category": "Web & Full Stack",
+      "proficiency": null,
+      "displayOrder": 21,
+      "active": true
+    },
+    {
+      "name": "Web Application Development",
+      "category": "Web & Full Stack",
+      "proficiency": null,
+      "displayOrder": 22,
+      "active": true
+    },
+    {
+      "name": "RESTful API Development",
+      "category": "Web & Full Stack",
+      "proficiency": null,
+      "displayOrder": 23,
+      "active": true
+    },
+    {
+      "name": "SQL",
+      "category": "Data & Analytics",
+      "proficiency": null,
+      "displayOrder": 24,
+      "active": true
+    },
+    {
+      "name": "MySQL",
+      "category": "Data & Analytics",
+      "proficiency": null,
+      "displayOrder": 25,
+      "active": true
+    },
+    {
+      "name": "PostgreSQL",
+      "category": "Data & Analytics",
+      "proficiency": null,
+      "displayOrder": 26,
+      "active": true
+    },
+    {
+      "name": "Pandas",
+      "category": "Data & Analytics",
+      "proficiency": null,
+      "displayOrder": 27,
+      "active": true
+    },
+    {
+      "name": "NumPy",
+      "category": "Data & Analytics",
+      "proficiency": null,
+      "displayOrder": 28,
+      "active": true
+    },
+    {
+      "name": "Matplotlib",
+      "category": "Data & Analytics",
+      "proficiency": null,
+      "displayOrder": 29,
+      "active": true
+    },
+    {
+      "name": "Seaborn",
+      "category": "Data & Analytics",
+      "proficiency": null,
+      "displayOrder": 30,
+      "active": true
+    },
+    {
+      "name": "Power BI",
+      "category": "Data & Analytics",
+      "proficiency": null,
+      "displayOrder": 31,
+      "active": true
+    },
+    {
+      "name": "Excel",
+      "category": "Data & Analytics",
+      "proficiency": null,
+      "displayOrder": 32,
+      "active": true
+    },
+    {
+      "name": "Data Visualization",
+      "category": "Data & Analytics",
+      "proficiency": null,
+      "displayOrder": 33,
+      "active": true
+    },
+    {
+      "name": "Data Validation & Processing",
+      "category": "Data & Analytics",
+      "proficiency": null,
+      "displayOrder": 34,
+      "active": true
+    },
+    {
+      "name": "Data Management",
+      "category": "Data & Analytics",
+      "proficiency": null,
+      "displayOrder": 35,
+      "active": true
+    },
+    {
+      "name": "Statistical Analysis",
+      "category": "Data & Analytics",
+      "proficiency": null,
+      "displayOrder": 36,
+      "active": true
+    },
+    {
+      "name": "Python Automation",
+      "category": "Automation",
+      "proficiency": null,
+      "displayOrder": 37,
+      "active": true
+    },
+    {
+      "name": "Power Automate",
+      "category": "Automation",
+      "proficiency": null,
+      "displayOrder": 38,
+      "active": true
+    },
+    {
+      "name": "Workflow Automation",
+      "category": "Automation",
+      "proficiency": null,
+      "displayOrder": 39,
+      "active": true
+    },
+    {
+      "name": "VBA",
+      "category": "Automation",
+      "proficiency": null,
+      "displayOrder": 40,
+      "active": true
+    },
+    {
+      "name": "UiPath",
+      "category": "Automation",
+      "proficiency": null,
+      "displayOrder": 41,
+      "active": true
+    },
+    {
+      "name": "Test Case Design & Execution",
+      "category": "Testing & Software Engineering",
+      "proficiency": null,
+      "displayOrder": 42,
+      "active": true
+    },
+    {
+      "name": "Defect Tracking & Documentation",
+      "category": "Testing & Software Engineering",
+      "proficiency": null,
+      "displayOrder": 43,
+      "active": true
+    },
+    {
+      "name": "Integration Testing",
+      "category": "Testing & Software Engineering",
+      "proficiency": null,
+      "displayOrder": 44,
+      "active": true
+    },
+    {
+      "name": "Test Automation",
+      "category": "Testing & Software Engineering",
+      "proficiency": null,
+      "displayOrder": 45,
+      "active": true
+    },
+    {
+      "name": "SDLC",
+      "category": "Testing & Software Engineering",
+      "proficiency": null,
+      "displayOrder": 46,
+      "active": true
+    },
+    {
+      "name": "System Testing",
+      "category": "Testing & Software Engineering",
+      "proficiency": null,
+      "displayOrder": 47,
+      "active": true
+    },
+    {
+      "name": "Debugging & Issue Analysis",
+      "category": "Testing & Software Engineering",
+      "proficiency": null,
+      "displayOrder": 48,
+      "active": true
+    },
+    {
+      "name": "Unit Testing",
+      "category": "Testing & Software Engineering",
+      "proficiency": null,
+      "displayOrder": 49,
+      "active": true
+    },
+    {
+      "name": "Git/GitHub",
+      "category": "Testing & Software Engineering",
+      "proficiency": null,
+      "displayOrder": 50,
+      "active": true
+    },
+    {
+      "name": "Linux",
+      "category": "Systems / Platforms",
+      "proficiency": null,
+      "displayOrder": 51,
+      "active": true
+    },
+    {
+      "name": "Docker",
+      "category": "Systems / Platforms",
+      "proficiency": null,
+      "displayOrder": 52,
+      "active": true
+    },
+    {
+      "name": "Cloud Platforms",
+      "category": "Systems / Platforms",
+      "proficiency": null,
+      "displayOrder": 53,
+      "active": true
+    },
+    {
+      "name": "Distributed Systems",
+      "category": "Systems / Platforms",
+      "proficiency": null,
+      "displayOrder": 54,
+      "active": true
+    },
+    {
+      "name": "System Design",
+      "category": "Systems / Platforms",
+      "proficiency": null,
+      "displayOrder": 55,
+      "active": true
+    },
+    {
+      "name": "Data Structures & Algorithms",
+      "category": "Computer Science",
+      "proficiency": null,
+      "displayOrder": 56,
+      "active": true
+    },
+    {
+      "name": "OOP",
+      "category": "Computer Science",
+      "proficiency": null,
+      "displayOrder": 57,
+      "active": true
+    },
+    {
+      "name": "Complexity Analysis",
+      "category": "Computer Science",
+      "proficiency": null,
+      "displayOrder": 58,
+      "active": true
+    },
+    {
+      "name": "Problem Solving",
+      "category": "Computer Science",
+      "proficiency": null,
+      "displayOrder": 59,
+      "active": true
+    },
+    {
+      "name": "OSI Model",
+      "category": "Networking",
+      "proficiency": null,
+      "displayOrder": 60,
+      "active": true
+    },
+    {
+      "name": "DNS",
+      "category": "Networking",
+      "proficiency": null,
+      "displayOrder": 61,
+      "active": true
+    },
+    {
+      "name": "Network Troubleshooting",
+      "category": "Networking",
+      "proficiency": null,
+      "displayOrder": 62,
+      "active": true
+    },
+    {
+      "name": "Routing & Forwarding",
+      "category": "Networking",
+      "proficiency": null,
+      "displayOrder": 63,
+      "active": true
+    },
+    {
+      "name": "DHCP",
+      "category": "Networking",
+      "proficiency": null,
+      "displayOrder": 64,
+      "active": true
+    },
+    {
+      "name": "TCP/IP",
+      "category": "Networking",
+      "proficiency": null,
+      "displayOrder": 65,
+      "active": true
+    },
+    {
+      "name": "HTTP",
+      "category": "Networking",
+      "proficiency": null,
+      "displayOrder": 66,
+      "active": true
+    },
+    {
+      "name": "Basic Network Security",
+      "category": "Networking",
+      "proficiency": null,
+      "displayOrder": 67,
+      "active": true
+    }
+  ],
+  "experience": [
+    {
+      "company": "Labmentix",
+      "role": "Web Development Intern",
+      "employmentType": "INTERNSHIP",
+      "startDate": "2026-08-01T00:00:00.000Z",
+      "endDate": "2026-10-31T00:00:00.000Z",
+      "current": false,
+      "displayOrder": 1,
+      "description": "Develop and maintain backend systems and REST APIs, with attention to functional correctness and reliability. Module-level testing and issue resolution sit with SDLC practice, software testing, and debugging."
+    },
+    {
+      "company": "Labmentix",
+      "role": "Data Analytics Intern",
+      "employmentType": "INTERNSHIP",
+      "startDate": "2025-10-01T00:00:00.000Z",
+      "endDate": "2026-04-30T00:00:00.000Z",
+      "current": false,
+      "displayOrder": 2,
+      "description": "Ran error analysis and data-integrity checks, and built interactive dashboards. Validation and quality assurance kept the figures consistent, and the findings were rewritten as insights for people outside the analysis."
+    },
+    {
+      "company": "Infotact Solutions",
+      "role": "Data Science & Machine Learning Intern",
+      "employmentType": "INTERNSHIP",
+      "startDate": "2026-01-01T00:00:00.000Z",
+      "endDate": "2026-04-30T00:00:00.000Z",
+      "current": false,
+      "displayOrder": 3,
+      "description": "Built Python data pipelines with an emphasis on consistency. Model testing, evaluation, and error analysis were part of the loop, along with troubleshooting that made the workflow easier to repeat."
+    },
+    {
+      "company": "VR Academy",
+      "role": "Machine Learning Intern",
+      "employmentType": "INTERNSHIP",
+      "startDate": "2025-03-01T00:00:00.000Z",
+      "endDate": "2025-06-30T00:00:00.000Z",
+      "current": false,
+      "displayOrder": 4,
+      "description": "Worked on end-to-end machine learning systems with performance in view. Modular pipelines, testing, and system evaluation were refined through iterative troubleshooting."
+    }
+  ],
+  "projects": [
+    {
+      "title": "Bio-Tech Quiz Quest",
+      "slug": "bio-tech-quiz-quest",
+      "shortDescription": "A pixel-art biotechnology campus where quizzes are scored on the server.",
+      "description": "Players explore a full-stack learning RPG built around Functional Genomics & Epigenomics. Assessments use negative marking and a server-side timer, and progress is tracked with XP, badges, and a leaderboard.",
+      "featured": true,
+      "published": true,
+      "projectUrl": "https://biotech-quiz-quest.vercel.app",
+      "githubUrl": "https://github.com/ViivianREINE/Bio-Tech-Quiz-Quest",
+      "stack": [
+        "TypeScript",
+        "React",
+        "Vite",
+        "Phaser",
+        "Tailwind CSS",
+        "Node.js",
+        "Express",
+        "PostgreSQL",
+        "Prisma",
+        "JWT"
+      ],
+      "displayOrder": 1
+    },
+    {
+      "title": "CloudVault",
+      "slug": "cloudvault",
+      "shortDescription": "A secure place to upload, organize, share, and recover files.",
+      "description": "CloudVault covers file uploads, folders, search, sharing with permissions, and trash with recovery. Sign-in uses JWT and Google OAuth2, and file access goes through signed URLs backed by PostgreSQL and Supabase Storage.",
+      "featured": true,
+      "published": true,
+      "projectUrl": "https://cloud-based-storage-eight.vercel.app",
+      "githubUrl": "https://github.com/ViivianREINE/Cloud-Based-Storage-Device",
+      "stack": [
+        "Java 17",
+        "Spring Boot",
+        "React",
+        "TypeScript",
+        "PostgreSQL",
+        "Supabase Storage",
+        "JWT"
+      ],
+      "displayOrder": 2
+    },
+    {
+      "title": "CrowdGuard AI",
+      "slug": "crowdguard-ai",
+      "shortDescription": "Video and audio signals combined into a crowd-risk score.",
+      "description": "CrowdGuard AI fuses a video model and an audio model using the weights documented in the repository, 0.6 for video and 0.4 for audio, then surfaces a risk score and real-time alerts. It is a monitoring prototype. It does not establish clinical or operational proof.",
+      "featured": true,
+      "published": true,
+      "projectUrl": "https://crowd-management-sigma.vercel.app",
+      "githubUrl": "https://github.com/ViivianREINE/crowd-management",
+      "stack": [
+        "FastAPI",
+        "Next.js",
+        "TensorFlow",
+        "OpenCV",
+        "Tailwind CSS"
+      ],
+      "displayOrder": 3
+    },
+    {
+      "title": "Instagram Performance Analytics — SUGAR Cosmetics",
+      "slug": "instagram-performance-analytics-sugar-cosmetics",
+      "shortDescription": "A Power BI reading of SUGAR Cosmetics Instagram performance.",
+      "description": "The dashboard is built on a dataset the repository reports as 50K posts, 30M profile visits, and 1B impressions. It covers monthly trends, post type, an engagement funnel from impressions through saves, and hashtag analytics.",
+      "featured": true,
+      "published": true,
+      "projectUrl": null,
+      "githubUrl": "https://github.com/ViivianREINE/Instagram-Performance-Analytics-for-Sugar-Cosmetics-",
+      "stack": [
+        "Power BI",
+        "Excel",
+        "CSV",
+        "Python"
+      ],
+      "displayOrder": 4
+    },
+    {
+      "title": "NavAura",
+      "slug": "navaura",
+      "shortDescription": "Nutrition guidance for one plate, across maternal and infant journeys.",
+      "description": "NavAura is built around “One Plate. Two Journeys.” A meal photo is read with Groq and Qwen Vision and mapped to USDA FoodData Central. Infant-feeding constraints use deterministic rules rather than unconstrained generation, with Vapi for voice and room for more than one language. It offers nutrition guidance, not a clinical diagnosis.",
+      "featured": true,
+      "published": true,
+      "projectUrl": "https://navaura.vercel.app/",
+      "githubUrl": "https://github.com/ViivianREINE/NavAura-AI-powered-maternal-and-infant-nutrition-companion",
+      "stack": [
+        "Next.js",
+        "TypeScript",
+        "Groq",
+        "Qwen Vision",
+        "USDA FoodData Central",
+        "Vapi",
+        "Supabase",
+        "Three.js",
+        "React Three Fiber"
+      ],
+      "displayOrder": 5
+    },
+    {
+      "title": "GeneScope AI",
+      "slug": "genescope-ai",
+      "shortDescription": "An exploratory bench for transcriptomic biomarker patterns.",
+      "description": "GeneScope AI supports differential expression, volcano-style views, PCA, clustered heatmaps, a gene explorer, TP53-focused analysis, and sarcoma subtype exploration, with dataset upload and CSV export. Bundled datasets in the repository are demonstration data. This is an exploratory computational biology platform, not a clinically validated diagnostic tool.",
+      "featured": true,
+      "published": true,
+      "projectUrl": null,
+      "githubUrl": "https://github.com/ViivianREINE/OMICS-CANCER",
+      "stack": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "FastAPI",
+        "Python",
+        "NumPy",
+        "Pandas",
+        "SciPy",
+        "scikit-learn",
+        "Docker"
+      ],
+      "displayOrder": 6
+    },
+    {
+      "title": "Parkinson's Disease Prediction",
+      "slug": "parkinsons-disease-prediction",
+      "shortDescription": "An SVM notebook that classifies biomedical voice measurements.",
+      "description": "The notebook trains a support vector machine on a voice-feature dataset and reviews accuracy with a confusion matrix. It is an exploratory machine-learning study, not a diagnostic device.",
+      "featured": false,
+      "published": true,
+      "projectUrl": null,
+      "githubUrl": "https://github.com/ViivianREINE/Parkinson-s-Disease-Prediction_",
+      "stack": [
+        "Python",
+        "scikit-learn",
+        "Jupyter"
+      ],
+      "displayOrder": 7
+    },
+    {
+      "title": "Credit Card Fraud Detection",
+      "slug": "credit-card-fraud-detection",
+      "shortDescription": "A Streamlit view of a logistic-regression fraud classifier.",
+      "description": "The app previews a credit-card dataset, reports classification metrics, draws a confusion matrix, and accepts a trial prediction. It is a model-inspection dashboard, not a live payments control.",
+      "featured": false,
+      "published": true,
+      "projectUrl": null,
+      "githubUrl": "https://github.com/ViivianREINE/CREDIT_CARD_FRAUD_DETECTION",
+      "stack": [
+        "Python",
+        "Streamlit",
+        "scikit-learn",
+        "Pandas",
+        "NumPy",
+        "Matplotlib",
+        "Seaborn"
+      ],
+      "displayOrder": 8
+    },
+    {
+      "title": "Carbon Footprint Calculator",
+      "slug": "carbon-footprint-calculator",
+      "shortDescription": "A Streamlit estimate of personal CO₂ from lifestyle inputs.",
+      "description": "Transport, energy, diet, and waste inputs run through the repository’s TensorFlow/Keras CNN, then Matplotlib and Seaborn chart the estimate. The README presents it as a sustainability demo, not a verified emissions audit.",
+      "featured": false,
+      "published": true,
+      "projectUrl": null,
+      "githubUrl": "https://github.com/ViivianREINE/Carbon-Footprint-Calculator-using-Advanced-Machine-Learning-CNN-",
+      "stack": [
+        "Python",
+        "TensorFlow",
+        "Keras",
+        "Streamlit",
+        "Pandas",
+        "NumPy",
+        "Matplotlib",
+        "Seaborn"
+      ],
+      "displayOrder": 9
+    },
+    {
+      "title": "Endometriosis Transcriptome Analysis",
+      "slug": "endometriosis-transcriptome-analysis",
+      "shortDescription": "A Python pipeline for endometriosis gene-expression exploration.",
+      "description": "The repository documents a reproducible Python workflow, using Galaxy and Colab, for quality control, differential expression, visualization, and biomarker exploration. It is computational analysis, not a clinical test.",
+      "featured": false,
+      "published": true,
+      "projectUrl": null,
+      "githubUrl": "https://github.com/ViivianREINE/Endometriosis-Transcriptome-Analysis",
+      "stack": [
+        "Python"
+      ],
+      "displayOrder": 10
+    },
+    {
+      "title": "Web3 Trading Analysis",
+      "slug": "web3-trading-analysis",
+      "shortDescription": "Trader activity compared with Fear and Greed sentiment.",
+      "description": "Historical trades and a Fear & Greed index are cleaned, aggregated by day, and compared with t-tests on activity, leverage, win rate, and PnL. A baseline logistic regression uses leverage, trade size, execution price, and sentiment to study whether a trade was profitable.",
+      "featured": false,
+      "published": true,
+      "projectUrl": "https://colab.research.google.com/drive/1b3NxhbYSPEJjo_ymSNxEeziKcgBBYfr6?usp=sharing",
+      "githubUrl": "https://github.com/ViivianREINE/Web3-Trading-Analysis",
+      "stack": [
+        "Python"
+      ],
+      "displayOrder": 11
+    },
+    {
+      "title": "Food Calorie Estimation",
+      "slug": "food-calorie-estimation",
+      "shortDescription": "A notebook that classifies a food photo and maps a calorie estimate.",
+      "description": "A convolutional network classifies food images, maps the predicted class to a calorie figure, and exposes the result through Gradio. It is an estimation demo, not a dietary assessment.",
+      "featured": false,
+      "published": true,
+      "projectUrl": null,
+      "githubUrl": "https://github.com/ViivianREINE/FOOD-CALORIE-ESTIMATION-DASHBOARD",
+      "stack": [
+        "Python",
+        "TensorFlow",
+        "Gradio"
+      ],
+      "displayOrder": 12
+    }
+  ],
+  "media": [
+    {
+      "file": "Midjourney.jpg",
+      "role": "profile"
+    },
+    {
+      "file": "download (1).jpg",
+      "role": "library"
+    }
+  ]
+}

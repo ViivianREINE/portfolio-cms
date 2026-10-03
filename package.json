@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "content:validate": "node scripts/validate-content.mjs",
+    "content:seed": "node scripts/seed-content.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.9.1",

@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { useQuery } from '@tanstack/react-query'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { listMedia } from '../../api/media'
+import { listAllMedia } from '../../api/media'
 import Button from '../common/Button'
 import { Checkbox, Input, Select, Textarea } from '../common/FormFields'
 import Modal from '../common/Modal'
@@ -30,8 +30,8 @@ function payloadValue(field, value) {
 export default function ResourceEditor({ config, item, busy, onClose, onSave }) {
   const editing = Boolean(item?.id)
   const mediaQuery = useQuery({
-    queryKey: ['media', 1],
-    queryFn: () => listMedia({ page: 1, limit: 20 }),
+    queryKey: ['media', 'all'],
+    queryFn: listAllMedia,
     enabled: config.fields.some((field) => field.type === 'media'),
   })
   const { register, reset, handleSubmit, formState: { errors, dirtyFields } } = useForm({

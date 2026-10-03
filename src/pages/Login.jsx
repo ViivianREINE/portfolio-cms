@@ -34,11 +34,11 @@ export default function Login() {
   }
 
   return (
-    <main className="grid min-h-screen bg-[#f6f8f5] lg:grid-cols-[minmax(0,1fr)_minmax(420px,0.9fr)]">
-      <section className="relative hidden overflow-hidden bg-[#173b32] px-12 py-12 text-white lg:flex lg:flex-col lg:justify-between xl:px-20">
-        <div className="absolute inset-0 opacity-[0.14]" style={{ backgroundImage: 'radial-gradient(#d2ead9 0.7px, transparent 0.7px)', backgroundSize: '18px 18px' }} />
+    <main className="grid min-h-screen bg-[#f7f1ea] lg:grid-cols-[minmax(0,1fr)_minmax(420px,0.9fr)]">
+      <section className="relative hidden overflow-hidden bg-[#3e2c27] px-12 py-12 text-[#fbf7f3] lg:flex lg:flex-col lg:justify-between xl:px-20">
+        <div className="absolute inset-0 opacity-[0.16]" style={{ backgroundImage: 'radial-gradient(#e6d0c8 0.7px, transparent 0.7px)', backgroundSize: '18px 18px' }} />
         <div className="relative flex items-center gap-3"><span className="grid size-10 place-items-center rounded-xl bg-white/10"><Fingerprint size={20} /></span><span className="text-sm font-bold tracking-wide">Portfolio CMS</span></div>
-        <div className="relative max-w-xl pb-8"><p className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-emerald-200"><span className="h-px w-7 bg-emerald-300" /> Your work, in focus</p><h1 className="mt-6 text-5xl font-semibold leading-[1.08] tracking-normal xl:text-6xl">A considered space for your next chapter.</h1><p className="mt-6 max-w-md text-base leading-7 text-emerald-50/75">Manage the portfolio that brings your work and ideas together.</p><div className="mt-10 flex items-center gap-3 text-sm text-emerald-100/75"><ShieldCheck size={17} /> Secure administrator access</div></div>
+        <div className="relative max-w-xl pb-8"><p className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-[#e6d0c8]"><span className="h-px w-7 bg-[#d4b5ab]" /> Private content desk</p><h1 className="mt-6 font-serif text-5xl font-semibold leading-[1.08] tracking-normal xl:text-6xl">The room behind the portfolio.</h1><p className="mt-6 max-w-md text-base leading-7 text-[#f4e7e1]/80">Edit the record once, in the section that owns it.</p><div className="mt-10 flex items-center gap-3 text-sm text-[#f4e7e1]/80"><ShieldCheck size={17} /> Administrator session</div></div>
         <p className="relative text-xs text-emerald-100/50">Portfolio CMS <span className="mx-2">/</span> Private workspace</p>
         <div className="absolute -bottom-40 -right-36 size-[440px] rounded-full border border-white/10" /><div className="absolute -bottom-24 -right-20 size-[300px] rounded-full border border-white/10" />
       </section>

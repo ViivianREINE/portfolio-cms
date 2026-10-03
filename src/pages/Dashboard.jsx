@@ -45,9 +45,9 @@ export default function Dashboard() {
   const messages = summary.data.messages.data || []
   return (
     <div className="space-y-7">
-      <section className="relative overflow-hidden rounded-2xl border border-emerald-950/10 bg-[#173b32] px-6 py-7 text-white sm:px-8 sm:py-8">
-        <div className="absolute inset-y-0 right-0 hidden w-[42%] opacity-25 sm:block" style={{ backgroundImage: 'linear-gradient(135deg, transparent 45%, #b5d7bf 45%, #b5d7bf 45.5%, transparent 45.5%), linear-gradient(45deg, transparent 65%, #b5d7bf 65%, #b5d7bf 65.5%, transparent 65.5%)' }} />
-        <div className="relative max-w-2xl"><p className="text-xs font-bold uppercase tracking-[0.16em] text-emerald-200">Portfolio overview</p><h2 className="mt-3 text-2xl font-semibold tracking-normal sm:text-3xl">Your work, at a glance.</h2><p className="mt-2 text-sm leading-6 text-emerald-50/70">A live snapshot of the content connected to your portfolio.</p><Link to="/projects" className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-white hover:text-emerald-100">Manage portfolio <ArrowRight size={15} /></Link></div>
+      <section className="relative overflow-hidden rounded-2xl border border-[#2a1e1b]/10 bg-[#3e2c27] px-6 py-7 text-[#fbf7f3] sm:px-8 sm:py-8">
+        <div className="absolute inset-y-0 right-0 hidden w-[42%] opacity-20 sm:block" style={{ backgroundImage: 'linear-gradient(135deg, transparent 45%, #d4b5ab 45%, #d4b5ab 45.5%, transparent 45.5%), linear-gradient(45deg, transparent 65%, #e6d0c8 65%, #e6d0c8 65.5%, transparent 65.5%)' }} />
+        <div className="relative max-w-2xl"><p className="text-xs font-bold uppercase tracking-[0.16em] text-[#e6d0c8]">Content desk</p><h2 className="mt-3 font-serif text-2xl font-semibold tracking-normal sm:text-3xl">What is live, and what is waiting.</h2><p className="mt-2 text-sm leading-6 text-[#f4e7e1]/75">Counts come from the portfolio API. Empty sections stay empty until there is a real record.</p><Link to="/projects" className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-white hover:text-[#f4e7e1]">Open projects <ArrowRight size={15} /></Link></div>
         <div className="absolute -bottom-14 right-12 hidden size-44 rounded-full border border-white/15 sm:block" /><div className="absolute -bottom-3 right-28 hidden size-24 rounded-full border border-white/15 sm:block" />
       </section>
 
