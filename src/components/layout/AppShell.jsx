@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { NavLink, Outlet, useLocation } from 'react-router-dom'
 import {
   AlignLeft, BookOpenText, BriefcaseBusiness, CircleUserRound,
-  FolderKanban, Image, LayoutDashboard, LogOut, Menu, MessageSquareText,
+  FolderKanban, Image, LayoutDashboard, LogOut, Menu, MessageSquareText, Trophy,
   Quote, Settings2, Sparkles, X,
 } from 'lucide-react'
 import useAuth from '../../hooks/useAuth'
@@ -14,6 +14,7 @@ const navigation = [
   { label: 'Projects', path: '/projects', icon: FolderKanban },
   { label: 'Blogs', path: '/blogs', icon: BookOpenText },
   { label: 'Experience', path: '/experience', icon: BriefcaseBusiness },
+  { label: 'Achievements', path: '/achievements', icon: Trophy },
   { label: 'Testimonials', path: '/testimonials', icon: Quote },
   { label: 'Services', path: '/services', icon: Settings2 },
   { label: 'Messages', path: '/messages', icon: MessageSquareText },

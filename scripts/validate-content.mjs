@@ -13,7 +13,8 @@ console.log(`Skills ${content.skills?.length || 0}`)
 console.log(`Experience ${content.experience?.length || 0}`)
 console.log(`Projects ${content.projects?.length || 0}`)
 console.log(`Featured ${featured.join(' | ')}`)
-console.log(`Achievements ${content.about?.profileData?.achievements?.length || 0}`)
+console.log(`Profile achievements ${content.about?.profileData?.achievements?.length || 0}`)
+console.log(`Hackathons ${content.hackathons?.length || 0}`)
 console.log(`Volunteering ${content.about?.profileData?.volunteering?.length || 0}`)
 
 if (errors.length) {

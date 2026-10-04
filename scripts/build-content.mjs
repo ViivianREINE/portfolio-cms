@@ -294,10 +294,77 @@ const content = {
       displayOrder: 12,
     },
   ],
+  hackathons: [
+    {
+      title: 'Monad Blitz',
+      organizer: null,
+      date: null,
+      location: null,
+      result: 'Top 100 out of 600+ teams',
+      placement: null,
+      projectName: 'Oaths & Ashes',
+      description: null,
+      technologies: ['Monad Testnet', 'Solidity', 'EIP-712', 'React', 'TypeScript', 'Autonomous AI Agents', 'Event-driven architecture'],
+      githubUrl: null,
+      liveUrl: null,
+      linkedinUrl: null,
+      featured: true,
+      displayOrder: 1,
+      active: true,
+    },
+    {
+      title: 'Meta PyTorch OpenEnv Hackathon',
+      organizer: null,
+      date: null,
+      location: null,
+      result: 'Grand Finale Finalist',
+      placement: null,
+      projectName: null,
+      description: 'Team 404_Brain_Not_Found. Cleared Round 1 from 52,000+ developers.',
+      technologies: [],
+      githubUrl: null,
+      liveUrl: null,
+      linkedinUrl: null,
+      featured: true,
+      displayOrder: 2,
+      active: true,
+    },
+    {
+      title: 'Algorand x402',
+      organizer: null,
+      date: null,
+      location: null,
+      result: null,
+      placement: null,
+      projectName: null,
+      description: null,
+      technologies: [],
+      githubUrl: null,
+      liveUrl: null,
+      linkedinUrl: null,
+      featured: false,
+      displayOrder: 3,
+      active: true,
+    },
+  ],
   media: [
     { file: 'Midjourney.jpg', role: 'profile' },
     { file: 'download (1).jpg', role: 'library' },
   ],
+}
+
+const imageSlotTitles = new Set([
+  'Bio-Tech Quiz Quest',
+  'CloudVault',
+  'CrowdGuard AI',
+  'Instagram Performance Analytics — SUGAR Cosmetics',
+  'NavAura',
+  'GeneScope AI',
+])
+for (const project of content.projects) {
+  if (!imageSlotTitles.has(project.title)) continue
+  project.coverImageId = null
+  project.gallery = []
 }
 
 fs.mkdirSync(path.dirname(out), { recursive: true })

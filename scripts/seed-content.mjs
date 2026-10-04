@@ -163,6 +163,41 @@ async function seedExperience(base, token, records) {
   return { created, updated, untouched: existing.length - updated }
 }
 
+async function seedHackathons(base, token, records = []) {
+  const existing = await listAll(base, token, '/admin/achievements')
+  const byTitle = new Map(existing.map((item) => [item.title.toLowerCase(), item]))
+  let created = 0
+  let updated = 0
+  for (const record of records) {
+    const payload = {
+      title: record.title,
+      organizer: blankToNull(record.organizer),
+      date: record.date || null,
+      location: blankToNull(record.location),
+      result: blankToNull(record.result),
+      placement: blankToNull(record.placement),
+      projectName: blankToNull(record.projectName),
+      description: blankToNull(record.description),
+      technologies: record.technologies || [],
+      githubUrl: blankToNull(record.githubUrl),
+      liveUrl: blankToNull(record.liveUrl),
+      linkedinUrl: blankToNull(record.linkedinUrl),
+      featured: record.featured,
+      displayOrder: record.displayOrder,
+      active: record.active,
+    }
+    const match = byTitle.get(record.title.toLowerCase())
+    if (match) {
+      await api(base, token, 'PUT', `/admin/achievements/${match.id}`, payload)
+      updated += 1
+    } else {
+      await api(base, token, 'POST', '/admin/achievements', payload)
+      created += 1
+    }
+  }
+  return { created, updated, untouched: existing.length - updated }
+}
+
 async function main() {
   const base = localApiBase()
   const token = await login(base)
@@ -172,11 +207,13 @@ async function main() {
   const skills = await seedSkills(base, token, content.skills)
   const projects = await seedProjects(base, token, content.projects)
   const experience = await seedExperience(base, token, content.experience)
+  const hackathons = await seedHackathons(base, token, content.hackathons)
   console.log(JSON.stringify({
     about,
     skills,
     projects,
     experience,
+    hackathons,
     media: media.map((item) => ({ file: item.file, created: item.created, id: item.media.id })),
   }, null, 2))
 }

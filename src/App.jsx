@@ -1,6 +1,7 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
 import AppShell from './components/layout/AppShell'
 import About from './pages/About'
+import Achievements from './pages/Achievements'
 import Blogs from './pages/Blogs'
 import Dashboard from './pages/Dashboard'
 import Experience from './pages/Experience'
@@ -26,6 +27,7 @@ export default function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/experience" element={<Experience />} />
+          <Route path="/achievements" element={<Achievements />} />
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/services" element={<Services />} />
           <Route path="/messages" element={<Messages />} />

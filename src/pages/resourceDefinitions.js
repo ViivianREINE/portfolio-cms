@@ -5,6 +5,7 @@ import blogsApi from '../api/blogs'
 import experienceApi from '../api/experience'
 import testimonialsApi from '../api/testimonials'
 import servicesApi from '../api/services'
+import achievementsApi from '../api/achievements'
 
 const text = (max = 200) => z.string().trim().max(max, `Use ${max} characters or fewer.`)
 const requiredText = (label, max = 200) => z.string().trim().min(1, `${label} is required.`).max(max)
@@ -27,15 +28,65 @@ export const resourceDefinitions = {
   },
   projects: {
     key: 'projects', title: 'Projects', singular: 'project', description: 'Curate the work shown in your public portfolio.', api: projectsApi,
+    galleryResource: 'projects',
     schema: z.object({ title: requiredText('Title'), slug, shortDescription: text(500).nullable().optional(), description: text(10000).nullable().optional(), featured: z.boolean().optional(), published: z.boolean().optional(), projectUrl: nullableUrl, githubUrl: nullableUrl, stack: text(1000).optional(), coverImageId: z.string().uuid('Enter a valid media ID.').or(z.literal('')).nullable().optional(), displayOrder: numberField(0).optional() }),
     fields: [
       { name: 'title', label: 'Title', required: true }, slugField, { name: 'shortDescription', label: 'Short description', type: 'textarea', rows: 2 },
       { name: 'description', label: 'Description', type: 'textarea', rows: 4 }, { name: 'stack', label: 'Technologies / stack', type: 'textarea', rows: 2, hint: 'Separate entries with commas.' },
       { name: 'projectUrl', label: 'Live project URL', type: 'url' }, { name: 'githubUrl', label: 'GitHub URL', type: 'url' },
-      { name: 'coverImageId', label: 'Cover image', type: 'media' }, { name: 'displayOrder', label: 'Display order', type: 'number', min: 0 },
+      { name: 'coverImageId', label: 'Cover image', type: 'media', hint: 'Optional. Gallery images are managed below after the project is saved.' }, { name: 'displayOrder', label: 'Display order', type: 'number', min: 0 },
       { name: 'featured', label: 'Featured', type: 'checkbox' }, { name: 'published', label: 'Published', type: 'checkbox' },
     ],
-    columns: [{ key: 'title', label: 'Project', strong: true }, { key: 'slug', label: 'Slug' }, { key: 'featured', label: 'Featured', type: 'boolean' }, { key: 'published', label: 'Published', type: 'boolean' }, { key: 'displayOrder', label: 'Order' }],
+    columns: [{ key: 'title', label: 'Project', strong: true }, { key: 'slug', label: 'Slug' }, { key: 'gallery', label: 'Gallery', type: 'count' }, { key: 'featured', label: 'Featured', type: 'boolean' }, { key: 'published', label: 'Published', type: 'boolean' }, { key: 'displayOrder', label: 'Order' }],
+  },
+  achievements: {
+    key: 'achievements', title: 'Achievements / Hackathons', singular: 'hackathon', description: 'Hackathon records and their image galleries. Images are attached after you upload them.', api: achievementsApi,
+    galleryResource: 'achievements',
+    schema: z.object({
+      title: requiredText('Title'),
+      organizer: text().nullable().optional(),
+      date: z.string().optional(),
+      location: text().nullable().optional(),
+      result: text(300).nullable().optional(),
+      placement: text().nullable().optional(),
+      projectName: text().nullable().optional(),
+      description: text(10000).nullable().optional(),
+      technologies: text(1000).optional(),
+      githubUrl: nullableUrl,
+      liveUrl: nullableUrl,
+      linkedinUrl: nullableUrl,
+      featured: z.boolean().optional(),
+      displayOrder: numberField(0).optional(),
+      active: z.boolean().optional(),
+      coverImageId: z.string().uuid('Enter a valid media ID.').or(z.literal('')).nullable().optional(),
+    }),
+    fields: [
+      { name: 'title', label: 'Title', required: true },
+      { name: 'organizer', label: 'Organizer' },
+      { name: 'date', label: 'Date', type: 'datetime' },
+      { name: 'location', label: 'Location' },
+      { name: 'result', label: 'Result' },
+      { name: 'placement', label: 'Placement' },
+      { name: 'projectName', label: 'Project name' },
+      { name: 'description', label: 'Description', type: 'textarea', rows: 4 },
+      { name: 'technologies', label: 'Technologies', type: 'textarea', rows: 2, list: true, hint: 'Separate entries with commas.' },
+      { name: 'githubUrl', label: 'GitHub URL', type: 'url' },
+      { name: 'liveUrl', label: 'Live URL', type: 'url' },
+      { name: 'linkedinUrl', label: 'LinkedIn URL', type: 'url' },
+      { name: 'coverImageId', label: 'Cover image', type: 'media', hint: 'You can also mark a gallery image as the cover.' },
+      { name: 'displayOrder', label: 'Display order', type: 'number', min: 0 },
+      { name: 'featured', label: 'Featured', type: 'checkbox' },
+      { name: 'active', label: 'Active', type: 'checkbox', defaultValue: true },
+    ],
+    columns: [
+      { key: 'title', label: 'Hackathon', strong: true },
+      { key: 'result', label: 'Result' },
+      { key: 'projectName', label: 'Project' },
+      { key: 'gallery', label: 'Images', type: 'count' },
+      { key: 'featured', label: 'Featured', type: 'boolean' },
+      { key: 'active', label: 'Active', type: 'boolean' },
+      { key: 'displayOrder', label: 'Order' },
+    ],
   },
   blogs: {
     key: 'blogs', title: 'Blogs', singular: 'article', description: 'Write and publish portfolio articles.', api: blogsApi,

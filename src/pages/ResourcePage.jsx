@@ -16,6 +16,7 @@ function renderValue(row, column) {
     const enabled = Boolean(value)
     return <span className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[11px] font-bold ${enabled ? 'bg-emerald-50 text-emerald-800' : 'bg-stone-100 text-stone-500'}`}><span className={`size-1.5 rounded-full ${enabled ? 'bg-emerald-600' : 'bg-stone-400'}`} />{enabled ? 'Yes' : 'No'}</span>
   }
+  if (column.type === 'count') return Array.isArray(value) && value.length ? String(value.length) : '—'
   if (column.type === 'date') return formatDate(value)
   if (column.suffix) return value == null ? '—' : `${value}${column.suffix}`
   const display = value == null || value === '' ? '—' : String(value)
@@ -71,7 +72,7 @@ export default function ResourcePage({ config }) {
         {meta?.totalPages > 1 && <div className="flex items-center justify-between border-t border-stone-100 px-5 py-3"><span className="text-xs text-stone-500">Page {meta.page} of {meta.totalPages}</span><div className="flex gap-1"><button type="button" aria-label="Previous page" disabled={page <= 1} onClick={() => setPage((current) => current - 1)} className="grid size-8 place-items-center rounded-lg text-stone-600 hover:bg-stone-100 disabled:opacity-30"><ChevronLeft size={17} /></button><button type="button" aria-label="Next page" disabled={page >= meta.totalPages} onClick={() => setPage((current) => current + 1)} className="grid size-8 place-items-center rounded-lg text-stone-600 hover:bg-stone-100 disabled:opacity-30"><ChevronRight size={17} /></button></div></div>}
       </section>
 
-      {editor && <ResourceEditor config={config} item={editor.id ? editor : null} busy={save.isPending} onClose={() => setEditor(null)} onSave={submit} />}
+      {editor && <ResourceEditor config={config} item={editor.id ? editor : null} busy={save.isPending} onClose={() => setEditor(null)} onSave={submit} onRecordChange={(record) => { setEditor(record); queryClient.invalidateQueries({ queryKey: ['resource', config.key] }) }} />}
       <ConfirmDialog open={Boolean(deleteItem)} title={`Delete ${config.singular}?`} description={`“${deleteItem?.title || deleteItem?.name || deleteItem?.company || 'This record'}” will be removed permanently.`} busy={remove.isPending} onCancel={() => setDeleteItem(null)} onConfirm={() => deleteItem && remove.mutate(deleteItem.id)} />
     </div>
   )

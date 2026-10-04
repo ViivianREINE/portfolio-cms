@@ -1,6 +1,7 @@
 import { useQuery } from '@tanstack/react-query'
-import { ArrowRight, BookOpenText, BriefcaseBusiness, FolderKanban, Image, MessageSquareText, Quote, Sparkles, Wrench } from 'lucide-react'
+import { ArrowRight, BookOpenText, BriefcaseBusiness, FolderKanban, Image, MessageSquareText, Quote, Sparkles, Trophy, Wrench } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import achievementsApi from '../api/achievements'
 import blogsApi from '../api/blogs'
 import experienceApi from '../api/experience'
 import projectsApi from '../api/projects'
@@ -14,6 +15,7 @@ import { getErrorMessage } from '../utils/errors'
 
 const summaryItems = [
   { label: 'Projects', key: 'projects', path: '/projects', icon: FolderKanban, tone: 'bg-sky-50 text-sky-800' },
+  { label: 'Hackathons', key: 'achievements', path: '/achievements', icon: Trophy, tone: 'bg-amber-50 text-amber-800' },
   { label: 'Articles', key: 'blogs', path: '/blogs', icon: BookOpenText, tone: 'bg-orange-50 text-orange-800' },
   { label: 'Skills', key: 'skills', path: '/skills', icon: Sparkles, tone: 'bg-violet-50 text-violet-800' },
   { label: 'Testimonials', key: 'testimonials', path: '/testimonials', icon: Quote, tone: 'bg-rose-50 text-rose-800' },
@@ -21,7 +23,7 @@ const summaryItems = [
   { label: 'Messages', key: 'messages', path: '/messages', icon: MessageSquareText, tone: 'bg-amber-50 text-amber-800' },
 ]
 
-const apiByKey = { projects: projectsApi, blogs: blogsApi, skills: skillsApi, testimonials: testimonialsApi, services: servicesApi, experience: experienceApi }
+const apiByKey = { projects: projectsApi, achievements: achievementsApi, blogs: blogsApi, skills: skillsApi, testimonials: testimonialsApi, services: servicesApi, experience: experienceApi }
 
 function countFrom(result) {
   return result?.meta?.total ?? result?.data?.length ?? 0

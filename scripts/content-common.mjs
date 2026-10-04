@@ -67,6 +67,40 @@ export function auditContent(content) {
   }
   if (featured.length !== 6) errors.push(`Expected 6 featured published projects, found ${featured.length}.`)
 
+  const imageSlotTitles = [
+    'Bio-Tech Quiz Quest',
+    'CloudVault',
+    'CrowdGuard AI',
+    'Instagram Performance Analytics — SUGAR Cosmetics',
+    'NavAura',
+    'GeneScope AI',
+  ]
+  for (const title of imageSlotTitles) {
+    const project = (content.projects || []).find((item) => item.title === title)
+    if (!project) {
+      errors.push(`Missing image slot for ${title}.`)
+      continue
+    }
+    if (project.coverImageId) errors.push(`${title} must keep an empty cover slot. No image URL is seeded.`)
+    if (!Array.isArray(project.gallery) || project.gallery.length) errors.push(`${title} gallery must stay empty until images are uploaded.`)
+  }
+
+  const hackathons = content.hackathons || []
+  const hackathonTitles = new Map()
+  for (const item of hackathons) {
+    const key = normalize(item.title)
+    if (hackathonTitles.has(key)) errors.push(`Duplicate hackathon: ${item.title}`)
+    hackathonTitles.set(key, item)
+  }
+  const algorand = hackathons.find((item) => normalize(item.title) === 'algorand x402')
+  if (!algorand) errors.push('Algorand x402 record is missing.')
+  else if (algorand.result || algorand.placement || algorand.projectName || algorand.description || (algorand.technologies || []).length) {
+    errors.push('Algorand x402 must not include an invented result, placement, project, description, or technology list.')
+  }
+  for (const title of ['Monad Blitz', 'Meta PyTorch OpenEnv Hackathon']) {
+    if (!hackathons.some((item) => item.title === title)) errors.push(`Missing hackathon: ${title}`)
+  }
+
   const achievements = new Map()
   for (const item of content.about?.profileData?.achievements || []) {
     const key = normalize(item.title)

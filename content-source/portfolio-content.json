@@ -8,7 +8,9 @@
     "volunteering": "Rotaract role only. Not repeated in the narrative.",
     "projects": "Featured work plus a short verified archive.",
     "blog": "No articles are seeded. The blog stays empty until a real piece exists.",
-    "contact": "Phone, email, LinkedIn, portfolio, and GitHub."
+    "contact": "Phone, email, LinkedIn, portfolio, and GitHub.",
+    "hackathons": "Hackathon records live in the achievements API. Images are attached in the CMS after upload. No image filenames are stored here.",
+    "projectImages": "Cover and gallery slots stay empty until media is uploaded. No image URLs are seeded."
   },
   "about": {
     "headline": "Software Engineer & AI Systems Developer",
@@ -618,7 +620,9 @@
         "Prisma",
         "JWT"
       ],
-      "displayOrder": 1
+      "displayOrder": 1,
+      "coverImageId": null,
+      "gallery": []
     },
     {
       "title": "CloudVault",
@@ -638,7 +642,9 @@
         "Supabase Storage",
         "JWT"
       ],
-      "displayOrder": 2
+      "displayOrder": 2,
+      "coverImageId": null,
+      "gallery": []
     },
     {
       "title": "CrowdGuard AI",
@@ -656,7 +662,9 @@
         "OpenCV",
         "Tailwind CSS"
       ],
-      "displayOrder": 3
+      "displayOrder": 3,
+      "coverImageId": null,
+      "gallery": []
     },
     {
       "title": "Instagram Performance Analytics — SUGAR Cosmetics",
@@ -673,7 +681,9 @@
         "CSV",
         "Python"
       ],
-      "displayOrder": 4
+      "displayOrder": 4,
+      "coverImageId": null,
+      "gallery": []
     },
     {
       "title": "NavAura",
@@ -695,7 +705,9 @@
         "Three.js",
         "React Three Fiber"
       ],
-      "displayOrder": 5
+      "displayOrder": 5,
+      "coverImageId": null,
+      "gallery": []
     },
     {
       "title": "GeneScope AI",
@@ -718,7 +730,9 @@
         "scikit-learn",
         "Docker"
       ],
-      "displayOrder": 6
+      "displayOrder": 6,
+      "coverImageId": null,
+      "gallery": []
     },
     {
       "title": "Parkinson's Disease Prediction",
@@ -830,6 +844,67 @@
     {
       "file": "download (1).jpg",
       "role": "library"
+    }
+  ],
+  "hackathons": [
+    {
+      "title": "Monad Blitz",
+      "organizer": null,
+      "date": null,
+      "location": null,
+      "result": "Top 100 out of 600+ teams",
+      "placement": null,
+      "projectName": "Oaths & Ashes",
+      "description": null,
+      "technologies": [
+        "Monad Testnet",
+        "Solidity",
+        "EIP-712",
+        "React",
+        "TypeScript",
+        "Autonomous AI Agents",
+        "Event-driven architecture"
+      ],
+      "githubUrl": null,
+      "liveUrl": null,
+      "linkedinUrl": null,
+      "featured": true,
+      "displayOrder": 1,
+      "active": true
+    },
+    {
+      "title": "Meta PyTorch OpenEnv Hackathon",
+      "organizer": null,
+      "date": null,
+      "location": null,
+      "result": "Grand Finale Finalist",
+      "placement": null,
+      "projectName": null,
+      "description": "Team 404_Brain_Not_Found. Cleared Round 1 from 52,000+ developers.",
+      "technologies": [],
+      "githubUrl": null,
+      "liveUrl": null,
+      "linkedinUrl": null,
+      "featured": true,
+      "displayOrder": 2,
+      "active": true
+    },
+    {
+      "title": "Algorand x402",
+      "organizer": null,
+      "date": null,
+      "location": null,
+      "result": null,
+      "placement": null,
+      "projectName": null,
+      "description": null,
+      "technologies": [],
+      "githubUrl": null,
+      "liveUrl": null,
+      "linkedinUrl": null,
+      "featured": false,
+      "displayOrder": 3,
+      "active": true
     }
   ]
 }
